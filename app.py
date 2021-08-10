@@ -18,15 +18,10 @@ st.write(food)
 
 ################################################################################
 
-
 options = st.multiselect(
     'Select Foods',
     food['Food_name'].unique(), ['Nuts, almonds']
 )
-
-if options != []:
-    selected = food.loc[food['Food_name'].isin(options)]
-    st.write('You selected:', selected)
 
 
 def create_barcharts(df):
@@ -34,7 +29,7 @@ def create_barcharts(df):
     df = df.loc[df['Vitamin'].isin(keys)].sort_values(
         by=['Vitamin'], ascending=True)
 
-    print(df)
+    # print(df)
 
     data = {}
 
@@ -58,4 +53,6 @@ def create_barcharts(df):
 
 
 if options != []:
+    selected = food.loc[food['Food_name'].isin(options)]
+    st.write('You selected:', selected)
     create_barcharts(selected)
