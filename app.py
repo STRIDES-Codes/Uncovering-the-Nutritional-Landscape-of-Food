@@ -25,29 +25,49 @@ options = st.multiselect(
 
 
 def create_barcharts(df):
-    keys = sorted(['Vitamin B12', 'Vitamin D'])
+    keys = sorted(['Vitamin A', 'Vitamin B12',
+                  'Vitamin D', 'Vitamin E', 'Vitamin K'], reverse=True)
     df = df.loc[df['Vitamin'].isin(keys)].sort_values(
         by=['Vitamin'], ascending=True)
-
-    # print(df)
 
     data = {}
 
     for row in df.itertuples(index=False):
-        data.setdefault(row[1], [])
-        data[row[1]].append(
-            (row[3], row[4])
+        data.setdefault(row[1], {})
+        data[row[1]].setdefault(
+            row[3], row[4]
         )
 
-    bar = []
-    for key in data:
-        bar.append(go.Bar(name=key, y=keys, x=[
-                   tuple[1] for tuple in data[key]], orientation='h'))
+    major_category = []
+    for k in keys:
+        major_category.extend([k] * (len(list(data.keys())) + 1))
+
+    minor_category = []
+    minor_category.extend((['Total'] + list(data.keys()))
+                          * (len(keys)))
+
+    y = [major_category, minor_category]
+    print(y)
 
     fig = go.Figure(
-        data=bar
     )
-    fig.update_layout(barmode='stack')
+
+    for food_name in data:
+        array = []
+        for i in range(len(minor_category)):
+            if minor_category[i] != 'Total' and minor_category[i] != food_name:
+                array.append(0)
+            else:
+                array.append(data[food_name][major_category[i]])
+        data[food_name]['bar_chart'] = array
+        fig.add_bar(y=y, x=array, orientation='h', name=food_name,
+                    text=array, textposition='auto')
+
+    fig.update_layout(
+        barmode='relative',
+        title=dict(text='Breakdown of micronutrients'),
+    )
+    fig.update_xaxes(title=dict(text='Percentage of daily intake in decimal'))
 
     return st.plotly_chart(fig)
 
