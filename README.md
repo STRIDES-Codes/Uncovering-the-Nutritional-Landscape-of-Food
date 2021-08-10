@@ -2,7 +2,7 @@
 # links to any resulting DOI
 
 
-# what is the problem
+# Problem
 Dietary choices and nutrition behaviors are highly individual and changes day to day. 
 
 Many variables weigh heavily on a person's food choices:
@@ -41,7 +41,9 @@ Information about nutrient content can be found in places like the Nutrition Fac
 
 *While it is largely difficult for scientific methods to account for all of the individual variations of diet preferences and access, information regarding nutritional content of food can be leveraged to develop data driven interpretations of foods.*
 
-# how we are going to solve the problem
+# Our Solution
+
+
 
 # description of our project
 
@@ -58,7 +60,7 @@ Information about nutrient content can be found in places like the Nutrition Fac
 # planned features/ what's next
 - automation of input files
 
-# references
+# References
 
-https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118697
+Kim S, Sung J, Foo M, Jin Y-S, Kim P-J (2015) Uncovering the Nutritional Landscape of Food. PLoS ONE 10(3): e0118697. https://doi.org/10.1371/journal.pone.0118697
 
