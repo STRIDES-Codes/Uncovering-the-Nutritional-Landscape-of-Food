@@ -43,10 +43,17 @@ Information about nutrient content can be found in places like the Nutrition Fac
 
 # Our Solution
 
-
+Our primary aim is to create an interactive visualization of foods and their nutritional contents. Individuals will be able to access our site and experiment with various food combinations to determine whether or not their diet satisfies recommended nutritional needs.
 
 # description of our project
 
+We're developing a web app that enables individuals to learn about the nutritional content of the foods they eat. Both macronutrient and micronutrient data on [hundreds?] of food items are immediately available upon a simple choice in a drop-down menu of food items.
+
+Our web app enables users to compare different food items and their nutritional value, as well as provide data on whether or not selected foods meet daily recommended nutritional guidelines set forth by the USDA.
+
+## Future Steps
+
+- Provide personalized recommendations of foods to add to an individual's diet in order to best satisfy nutritional needs.
 
 # link to our Streamlit site
 
