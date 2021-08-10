@@ -56,6 +56,7 @@ Information about nutrient content can be found in places like the Nutrition Fac
 - instructions for what to install, any dependencies, any example code we may be able to include
 
 # planned features/ what's next
+- automation of input files
 
 # references
 
