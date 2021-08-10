@@ -67,6 +67,15 @@ Our web app enables users to compare different food items and their nutritional 
 # planned features/ what's next
 - automation of input files
 
+# Our Team
+Eric Ruan
+Eva Jason
+Kyle Pu
+Lauren Chan
+Tarek Antar
+Adam Thomas
+Dustin Moraczewski
+
 # References
 
 Kim S, Sung J, Foo M, Jin Y-S, Kim P-J (2015) Uncovering the Nutritional Landscape of Food. PLoS ONE 10(3): e0118697. https://doi.org/10.1371/journal.pone.0118697
