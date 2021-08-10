@@ -1,5 +1,26 @@
-# Uncovering-the-Nutritional-Landscape-of-Food
+# Visualizing-the-Nutritional-Landscape-of-Food: an NIH Codeathon
+# links to any resulting DOI
 
-Our project will focus on demystifying what we should eat. Starting with the datasets provided by the [USDA](https://fdc.nal.usda.gov/download-datasets.html) and the analysis performed in [Uncovering the Nutritional Landscape of Food](https://journals.plos.org/plosone/article/citation?id=10.1371/journal.pone.0118697), we will make an interactive dashboard using [Streamlet](https://streamlit.io/) to visualize which food are most nutritious. 
+
+# what is the problem
+
+# how we are going to solve the problem
+
+# description of our project
+
+
+# link to our Streamlit site
+
+# information for streamlit user
+- include information about what the inputs are and what the outputs are (figure/ workflow diagram), describe them distinctly
+- use some of the screenshot pieces here if possible from our use case
+
+# information for those looking to replicate
+- instructions for what to install, any dependencies, any example code we may be able to include
+
+# planned features/ what's next
+
+# references
+
 
 
