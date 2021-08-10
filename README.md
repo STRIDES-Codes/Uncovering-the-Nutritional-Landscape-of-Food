@@ -43,7 +43,7 @@ Information about nutrient content can be found in places like the Nutrition Fac
 
 # Our Solution
 
-Our primary aim is to create an interactive visualization of foods and their nutritional contents. Individuals will be able to access our site and experiment with various food combinations to determine whether or not their diet satisfies recommended nutritional needs.
+Our primary aim is to create an interactive visualization dashboard of 1000+ raw and minimally processed foods and their nutritional contents (sourced from the United States Department (USDA) of Agriculture Food Data Central resource). You can reach our site XXXXXXXXX and experiment with 1) view nutrition content for a single food, 2) compare multiple food items’ nutritional content, and 3) view various food combinations and their resulting nutrition content to determine whether or not their diet satisfies recommended nutritional needs (based on USDA Dietary Reference Intakes (DRI)).
 
 # description of our project
 
