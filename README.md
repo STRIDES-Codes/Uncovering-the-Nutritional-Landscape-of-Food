@@ -69,7 +69,7 @@ Our web app enables users to compare different food items and their nutritional 
 
 # Our Team
 Eric Ruan
-Eva Jason
+Eva Jason - Postbaccalaureate IRTA in the NICHD
 Kyle Pu
 Lauren Chan
 Tarek Antar
