@@ -47,7 +47,6 @@ def create_barcharts(df):
                           * (len(keys)))
 
     y = [major_category, minor_category]
-    print(y)
 
     fig = go.Figure(
     )
@@ -59,7 +58,6 @@ def create_barcharts(df):
                 array.append(0)
             else:
                 array.append(data[food_name][major_category[i]])
-        data[food_name]['bar_chart'] = array
         fig.add_bar(y=y, x=array, orientation='h', name=food_name,
                     text=array, textposition='auto')
 
