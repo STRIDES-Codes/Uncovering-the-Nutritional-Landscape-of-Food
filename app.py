@@ -298,3 +298,7 @@ with st.container():
                 return possibleFoods.iloc[:numRecs]["food"].values
 
             return possibleFoods.iloc[0]["food"]
+        
+        lackingNutrient = min(data[‘Total’], key=data[‘Total’].get)
+        foodsToRec = rec_foods(lackingNutrient) # Array of foods to recommend
+        
