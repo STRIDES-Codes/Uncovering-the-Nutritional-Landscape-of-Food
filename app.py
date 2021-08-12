@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 
 DATA_URL = 'https://raw.githubusercontent.com/STRIDES-Codes/Uncovering-the-Nutritional-Landscape-of-Food/main/nutrient_foodname_DRI.csv'
 
-st.title('Uncovering the Nutritional Landscape of Food')
+st.title('Visualizing the Nutritional Landscape of Food')
 
 
 @st.cache
@@ -60,7 +60,10 @@ with st.container():
     # Create two checkboxes, of which its isChecked status is referenced by the variables
     # 'total_checkbox' & 'gender_checkbox'
     total_checkbox: bool = st.checkbox('Show total only')
-    gender_checkbox: bool = st.checkbox('Male')
+
+    gender_radio = st.radio(
+        'Gender:', options=['Male 19-30y', 'Female 19-30y'])
+    gender_checkbox = gender_radio == 'Male'
 
     def create_barcharts(df, keys=[], male: bool = True):
         """
@@ -95,7 +98,7 @@ with st.container():
             data.setdefault(row[2], {})
 
             dri = (row[3] * row[6] /
-                   row[7]) if male else (row[3] * row[6] / row[8])
+                   row[7] * 100) if male else (row[3] * row[6] / row[8] * 100)
 
             if row[4] in data[row[2]]:
                 # If the micronutrient appears in more than one row,
@@ -142,7 +145,7 @@ with st.container():
             title=dict(text='Breakdown of Micronutrients'),
         )
         fig.update_xaxes(title=dict(
-            text='Percentage of daily intake in decimal'), rangemode='tozero')
+            text='Percentage of daily intake (%)'), rangemode='tozero')
 
         return st.plotly_chart(fig)
 
@@ -162,7 +165,7 @@ with st.container():
                 if row[4] in x:
                     if 'added' in row[0]:
                         x[1] += (row[3] * row[6] /
-                                 row[7]) if male else (row[3] * row[6] / row[8])
+                                 row[7] * 100) if male else (row[3] * row[6] / row[8] * 100)
                     else:
                         found = True
                         break
@@ -170,10 +173,8 @@ with st.container():
             if not found:
                 data[row[2]].append(
                     [row[4], (row[3] * row[6] /
-                              row[7]) if male else (row[3] * row[6] / row[8])]
+                              row[7] * 100) if male else (row[3] * row[6] / row[8] * 100)]
                 )
-
-        print(data)
 
         bar = []
         for key in data:
@@ -190,7 +191,7 @@ with st.container():
         fig.update_xaxes(title=dict(
             text='Micronutrients'))
         fig.update_yaxes(title=dict(
-            text='Percentage of daily intake in decimal'), rangemode='tozero')
+            text='Percentage of daily intake (%)'), rangemode='tozero')
         return st.plotly_chart(fig)
 
     if options != []:
