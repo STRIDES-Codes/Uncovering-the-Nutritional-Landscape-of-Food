@@ -24,16 +24,13 @@ Our primary aim for this project is to create an interactive visualization dashb
 
 # Visualization Dashboard
 
-You can reach our Streamlit dashboard here:https://share.streamlit.io/tantar/uncovering-the-nutritional-landscape-of-food/main/UNLF.py and experiment with Individual, Comparison, and Diet views. 
+You can reach our Streamlit dashboard here:https://share.streamlit.io/tantar/uncovering-the-nutritional-landscape-of-food/main/UNLF.py. Currently we support three different types of visualizations for individual foods, comparison between foods, and the user's personal diet with recommendations.  
 
-Individual view: If a user was interested in viewing the nutrition content for a single food item, they can select the Individual Food option. Within this option, a food such as ocean perch can be evaluated for its carbohydrate, protein, and fiber content in comparison to USDA DRIs as well as a selection of nutrients including: Vitamins A, D, E, K, and C, B vitamins, calcium, copper, iron, magnesium, phosphorus, potassium, selenium, sodium, zinc, choline, and total water. An example of this visualization is shown below.
+Individual view: If a user was interested in viewing the nutrition content for a single food item, they can select the Individual Food option. Within this option, a food such as ocean perch can be evaluated for its carbohydrate, protein, and fiber content in comparison to USDA daily recommended intake, as well as a selection of nutrients including: Vitamins A, D, E, K, and C, B vitamins, calcium, copper, iron, magnesium, phosphorus, potassium, selenium, sodium, and zinc. An example of this visualization is shown below.
 
+Comparison view: For users interested in viewing a nutrient comparison between multiple foods, the Comparison view allows for selection of various foods of interest and reports nutrient content. All nutrient options are consistent with those available in the Individual view, however this view is specifically color-coded to allow for consistent identification of what food item is contributing to each nutrient's daily recommended intake. This visualization can be seen here.
 
-Comparison view: For users interested in viewing a nutrient comparison between multiple foods, the Diet view allows for selection of various foods of interest and reports nutrient content. All nutrient options are consistent with those available in the Individual view. This view is specifically color-coded to allow for consistent identification of what food item is contributing what nutrient content. This visualization can be seen here.
-
-
-Diet + Recommendation view: This view is for individuals interested in eliciting feedback regarding suggested foods to consume given a current dietary intake. Within the Diet with Recommendations view users can  select multiple foods and their nutrients of interest to receive visualization of that data. Additionally, in this view users will receive three recommended foods that are specifically selected to improve the nutrient content of the listed diet to meet dietary reference ranges. Dietary limitation and activity level information is not currently functional within this view.An example of this visualization is displayed below. 
-
+Diet with Recommendations view: This view is for individuals interested in gaining insight into how their current diet meets the daily recommended intake for each nutrient with recommendations on how to meet their daily needs. Within the Diet with Recommendations view users can select multiple foods and their nutrients of interest to receive visualization of that data. Additionally, in this view users will receive three recommended foods that are specifically selected to improve the nutrient content of the listed diet to meet dietary reference ranges. Dietary limitation and activity level information is not currently functional within this view.An example of this visualization is displayed below. 
 
 
 All data on Dietary Reference Intakes are from the USDA (https://www.nal.usda.gov/sites/default/files/fnic_uploads/recommended_intakes_individuals.pdf) and are currently only applicable for individuals ages 19-30 years old. 
@@ -43,7 +40,7 @@ All data on Dietary Reference Intakes are from the USDA (https://www.nal.usda.go
 This freely available dashboard only requires internet access. Any individual who is interested in using the dashboard is able to interact with it on their local machine.
 
 # For those looking to replicate our Streamlit
-Streamlit is a python based platform. Individuals looking to replicate and edit the dashboard created for this project will need to download python in order to do so. If interested in using our code, that is made readily available within our GitHub and can also be found in a condensed file on Zenodo. LINK
+First, an individual would need to download the datasets described in the "Datasets Used for this Project" section below. Once the foods and nutrient values are integrated into a single dataset, they would then need to calculate what percent of each nutrients recommended daily intakes it met by individual foods. Individuals looking to replicate and edit the dashboard created for this project will need to download python and install the streamlit and plotly libraries. If interested in using our code, that is made readily available within our GitHub and can also be found in a condensed file on Zenodo. LINK
 
 # Future Directions
 We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate updating of data from USDA FDC 3) include all age bracket options for dietary reference intakes, 4) include activity level and dietary limitation specific customizations 5) allow for the serving size to be customized, and 6) pursue user testing and elicit feedback. 
@@ -62,7 +59,7 @@ Kyle Pu
 
 Lauren Chan - PhD Candidate in Nutrition at Oregon State University
 
-Tarek Antar
+Tarek Antar - Postbaccalaurate IRTA in the NIA
 
 Adam Thomas
 
