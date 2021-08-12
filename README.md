@@ -28,9 +28,13 @@ You can reach our Streamlit dashboard here:https://share.streamlit.io/tantar/unc
 
 Individual view: If a user was interested in viewing the nutrition content for a single food item, they can select the Individual Food option. Within this option, a food such as ocean perch can be evaluated for its carbohydrate, protein, and fiber content in comparison to USDA DRIs as well as a selection of nutrients including: Vitamins A, D, E, K, and C, B vitamins, calcium, copper, iron, magnesium, phosphorus, potassium, selenium, sodium, zinc, choline, and total water. An example of this visualization is shown below.
 
+
 Comparison view: For users interested in viewing a nutrient comparison between multiple foods, the Diet view allows for selection of various foods of interest and reports nutrient content. All nutrient options are consistent with those available in the Individual view. This view is specifically color-coded to allow for consistent identification of what food item is contributing what nutrient content. This visualization can be seen here.
 
-Diet + Recommendation view: This view is for individuals interested in eliciting feedback regarding suggested foods to consume given a current dietary intake. Within the Diet with Recommendations view users can  select multiple foods and will receive the resulting nutrition content of each food. Additionally, in this view users will receive three recommended foods that are specifically selected to improve the nutrient content of the listed diet to meet dietary reference ranges. 
+
+Diet + Recommendation view: This view is for individuals interested in eliciting feedback regarding suggested foods to consume given a current dietary intake. Within the Diet with Recommendations view users can  select multiple foods and their nutrients of interest to receive visualization of that data. Additionally, in this view users will receive three recommended foods that are specifically selected to improve the nutrient content of the listed diet to meet dietary reference ranges. Dietary limitation and activity level information is not currently functional within this view.An example of this visualization is displayed below. 
+
+
 
 All data on Dietary Reference Intakes are from the USDA (https://www.nal.usda.gov/sites/default/files/fnic_uploads/recommended_intakes_individuals.pdf) and are currently only applicable for individuals ages 19-30 years old. 
 
@@ -42,7 +46,7 @@ This freely available dashboard only requires internet access. Any individual wh
 Streamlit is a python based platform. Individuals looking to replicate and edit the dashboard created for this project will need to download python in order to do so. If interested in using our code, that is made readily available within our GitHub and can also be found in a condensed file on Zenodo. LINK
 
 # Future Directions
-We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate updating of data from USDA FDC 3) include all age bracket options for dietary reference intakes, 4) allow for the serving size to be customized, and 5) pursue user testing and elicit feedback. 
+We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate updating of data from USDA FDC 3) include all age bracket options for dietary reference intakes, 4) include activity level and dietary limitation specific customizations 5) allow for the serving size to be customized, and 6) pursue user testing and elicit feedback. 
 
 # Datasets Used for this Project
 - "Uncovering the Nutritional Landscape of Food by Kim" et al. [S1 Dataset. Foods analyzed in this study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118697#references)
