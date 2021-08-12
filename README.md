@@ -63,6 +63,12 @@ Our web app enables users to compare different food items and their nutritional 
 # planned features/ what's next
 We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate file ingestion, 3) include all age bracket options for dietary reference intakes, and 4) pursue user testing and elicit feedback. 
 
+# datasets used
+
+- "Uncovering the Nutritional Landscape of Food by Kim" et al. [S1 Dataset. Foods analyzed in this study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118697#references)
+
+- [USDA FoodData Central](https://fdc.nal.usda.gov/download-datasets.html) [April 2019 (CSV – 6.1MB)](https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_%202019-04-02.zip)
+
 # Our Team
 Eric Ruan
 
