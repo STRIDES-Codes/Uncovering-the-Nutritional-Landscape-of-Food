@@ -20,15 +20,20 @@ All these factors make idenfitfying factual and unbiased information regarding n
 
 # Our Solution
 
-Our primary aim is to create an interactive visualization dashboard of 1000+ raw and minimally processed foods and their nutritional contents (sourced from the United States Department (USDA) of Agriculture Food Data Central resource). You can reach our site XXXXXXXXX and experiment with 1) view nutrition content for a single food, 2) compare multiple food items’ nutritional content, and 3) view various food combinations and their resulting nutrition content to determine whether or not their diet satisfies recommended nutritional needs (based on USDA Dietary Reference Intakes (DRI)).
+Our primary aim for this project is to create an interactive visualization dashboard of a selection of foods and their nutritional contents (sourced from the United States Department of Agriculture (USDA) Food Data Central resource). 
 
-# description of our project
+# Visualization platform
 
-We're developing a web app that enables individuals to learn about the nutritional content of the foods they eat. Both macronutrient and micronutrient data on [hundreds?] of food items are immediately available upon a simple choice in a drop-down menu of food items.
+You can reach our Streamlit dashboard here:https://share.streamlit.io/tantar/uncovering-the-nutritional-landscape-of-food/main/UNLF.py and experiment with Individual, Comparison, and Diet views. 
 
-Our web app enables users to compare different food items and their nutritional value, as well as provide data on whether or not selected foods meet daily recommended nutritional guidelines set forth by the USDA.
+Individual view: If a user was interested in viewing the nutrition content for a single food item, they can select the Individual Food option. Within this option, a food such as ocean perch can be evaluated for its carbohydrate, protein, and fiber content in comparison to USDA DRIs as well as a selection of nutrients including: Vitamins A, D, E, K, and C, B vitamins, calcium, copper, iron, magnesium, phosphorus, potassium, selenium, sodium, zinc, choline, and total water. An example of this visualization is shown below.
 
-# link to our Streamlit site
+Comparison view: For users interested in viewing a nutrient comparison between multiple foods, the Diet view allows for selection of various foods of interest and reports nutrient content. All nutrient options are consistent with those available in the Individual view. This view is specifically color-coded to allow for consistent identification of what food item is contributing what nutrient content. This visualization can be seen here.
+
+Diet + Recommendation view: This view is for individuals interested in eliciting feedback regarding suggested foods to consume given a current dietary intake. Within the Diet with Recommendations view users can  select multiple foods and will receive the resulting nutrition content of each food. Additionally, in this view users will receive three recommended foods that are specifically selected to improve the nutrient content of the listed diet to meet dietary reference ranges. 
+
+All data on Dietary Reference Intakes are from the USDA (https://www.nal.usda.gov/sites/default/files/fnic_uploads/recommended_intakes_individuals.pdf) and are currently only applicable for individuals ages 19-30 years old. 
+
 
 # information for streamlit user
 - include information about what the inputs are and what the outputs are (figure/ workflow diagram), describe them distinctly
