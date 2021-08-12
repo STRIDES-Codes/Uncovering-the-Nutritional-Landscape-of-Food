@@ -59,7 +59,7 @@ We hope to continue refining our dashboard to include greater functionality and 
 - [USDA FoodData Central](https://fdc.nal.usda.gov/download-datasets.html) [April 2019 (CSV – 6.1MB)](https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_%202019-04-02.zip)
 
 # Our Team
-Eric Ruan
+Eric Ruan - Computer Science Undergrad at SBU
 
 Eva Jason - Postbaccalaureate IRTA in the NICHD
 
