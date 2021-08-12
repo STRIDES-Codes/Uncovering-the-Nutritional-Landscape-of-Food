@@ -63,7 +63,7 @@ with st.container():
 
     gender_radio = st.radio(
         'Gender:', options=['Male 19-30y', 'Female 19-30y'])
-    gender_checkbox = gender_radio == 'Male'
+    gender_checkbox = gender_radio == 'Male 19-30y'
 
     def create_barcharts(df, keys=[], male: bool = True):
         """
