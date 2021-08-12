@@ -22,7 +22,7 @@ All these factors make idenfitfying factual and unbiased information regarding n
 
 Our primary aim for this project is to create an interactive visualization dashboard of a selection of foods and their nutritional contents (sourced from the United States Department of Agriculture (USDA) Food Data Central resource). 
 
-# Visualization platform
+# Visualization Dashboard
 
 You can reach our Streamlit dashboard here:https://share.streamlit.io/tantar/uncovering-the-nutritional-landscape-of-food/main/UNLF.py and experiment with Individual, Comparison, and Diet views. 
 
@@ -42,11 +42,10 @@ All data on Dietary Reference Intakes are from the USDA (https://www.nal.usda.go
 # information for those looking to replicate
 - instructions for what to install, any dependencies, any example code we may be able to include
 
-# planned features/ what's next
-We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate file ingestion, 3) include all age bracket options for dietary reference intakes, and 4) pursue user testing and elicit feedback. 
+# Future Directions
+We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate updating of data from USDA FDC 3) include all age bracket options for dietary reference intakes, and 4) pursue user testing and elicit feedback.
 
-# datasets used
-
+# Datasets Used for this Project
 - "Uncovering the Nutritional Landscape of Food by Kim" et al. [S1 Dataset. Foods analyzed in this study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118697#references)
 
 - [USDA FoodData Central](https://fdc.nal.usda.gov/download-datasets.html) [April 2019 (CSV – 6.1MB)](https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_%202019-04-02.zip)
