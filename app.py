@@ -20,17 +20,24 @@ food = load_data()
 
 ################################################################################
 
+# Create a bar chart container for logical separation
 with st.container():
     st.subheader('Compare food micronutrients using bar charts')
+
+    # Create a multiselector widget titled 'Select Foods', populate it with all unique food names
     options = st.multiselect(
         'Select Foods',
         sorted(food['food'].unique()), []
     )
 
+    # Create a two column container
     col1, col2 = st.columns(2)
 
+    # First column contains the vitamin multiselector
     with col1:
+        # Grab all unique micronutrients
         unique_nutrients = food['DRI_name'].unique().tolist()
+        # Loop through each micronutrient and filter out those that do contain the word 'Vitamin' in it
         unique_nutrients = [
             nutrient for nutrient in unique_nutrients if 'Vitamin' in nutrient]
         vitamins_keys = st.multiselect(
@@ -40,52 +47,81 @@ with st.container():
 
     with col2:
         unique_minerals = food['DRI_name'].unique().tolist()
+
+        # Loop through each micronutrient and filter out those that are not minerals
         unique_minerals = [
-            nutrient for nutrient in unique_minerals if 'Vitamin' not in nutrient and ':' not in nutrient and ', ' in nutrient]
+            nutrient for nutrient in unique_minerals
+            if 'Vitamin' not in nutrient and ':' not in nutrient and ', ' in nutrient]
         mineral_keys = st.multiselect(
             'Select Minerals',
             sorted(unique_minerals), []
         )
 
-    total_checkbox = st.checkbox('Show total only')
-    gender_checkbox = st.checkbox('Male')
+    # Create two checkboxes, of which its isChecked status is referenced by the variables
+    # 'total_checkbox' & 'gender_checkbox'
+    total_checkbox: bool = st.checkbox('Show total only')
+    gender_checkbox: bool = st.checkbox('Male')
 
-    def create_barcharts(df, keys=[], male=True):
+    def create_barcharts(df, keys=[], male: bool = True):
+        """
+        Args:
+            df - A pandas dataframe containing the dataset.\n
+            keys - A list of micronutrients to compare with, must match the micronutrient found in the df.\n
+            male - A boolean, if True calculates percent daily intake using recommendation for males, else calculates
+            for females. \n
+
+        Returns:
+            A streamlit plotly bar chart object.
+        """
         keys = sorted(keys, reverse=True)
+
+        # Filter out the df rows that do not contain the correct micronutrient
         df = df.loc[df['DRI_name'].isin(keys)].sort_values(
             by=['DRI_name'], ascending=True)
         data = {}
 
+        # Create the data format for easier Plotly graphing
+        # {
+        #   'Food name': {
+        #                   'Micronutrient#1': value1 * unit_conversion / daily recommended,
+        #                    ...
+        #                },
+        # }
         for row in df.itertuples(index=False):
+            # row[2] = Food name
+            # row[3] = nutrient_value
+            # row[6] = Conversion factor
+            # row[4] = DRI name (simplified nutrient name)
             data.setdefault(row[2], {})
 
             dri = (row[3] * row[6] /
                    row[7]) if male else (row[3] * row[6] / row[8])
 
             if row[4] in data[row[2]]:
+                # If the micronutrient appears in more than one row,
+                # then it ignores it unless it contains 'added' in its name
                 if 'added' in row[0]:
                     data[row[2]].update({row[4]: data[row[2]][row[4]] + dri})
             data[row[2]].setdefault(
                 row[4], dri
             )
 
-        # row[2] = Food name
-        # row[3] = nutrient_value
-        # row[6] = Conversion factor
-        # row[4] = DRI name (simplified nutrient name)
-
+        # The major categories are the name of Micronutrients
         major_category = []
         for k in keys:
             major_category.extend([k] * (len(list(data.keys())) + 1))
 
+        # The minor categories are each food name, and 'total' to stack them up.
         minor_category = []
         minor_category.extend((['Total'] + list(data.keys()))
                               * (len(keys)))
 
+        # Each major category must have a minor category and vice versa thus the array ends up looking like
+        # [[Vit A, Vit A, Vita A, Vit B, B, B], [Total, Food1, Food2, Total, Food1, Food2]]
         y = [major_category, minor_category]
 
-        fig = go.Figure(
-        )
+        # Create the Plotly empty graph object
+        fig = go.Figure()
 
         for food_name in data:
             array = []
