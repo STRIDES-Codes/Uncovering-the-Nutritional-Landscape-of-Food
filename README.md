@@ -27,7 +27,7 @@ Our primary aim for this project is to create an interactive visualization dashb
 You can reach our Streamlit dashboard here:https://share.streamlit.io/tantar/uncovering-the-nutritional-landscape-of-food/main/UNLF.py. Currently we support three different types of visualizations for individual foods, comparison between foods, and the user's personal diet with recommendations.  
 
 Individual view: If a user was interested in viewing the nutrition content for a single food item, they can select the Individual Food option. Within this option, a food such as ocean perch can be evaluated for its carbohydrate, protein, and fiber content in comparison to USDA daily recommended intake, as well as a selection of nutrients including: Vitamins A, D, E, K, and C, B vitamins, calcium, copper, iron, magnesium, phosphorus, potassium, selenium, sodium, and zinc. An example of this visualization is shown below.
-[Screen-Shot-2021-08-12-at-11-33-11-AM.png](https://postimg.cc/WqZxKTyt)
+[![Screen-Shot-2021-08-12-at-11-33-11-AM.png](https://i.postimg.cc/FzCmYKgb/Screen-Shot-2021-08-12-at-11-33-11-AM.png)](https://postimg.cc/WqZxKTyt)
 
 Comparison view: For users interested in viewing a nutrient comparison between multiple foods, the Comparison view allows for selection of various foods of interest and reports nutrient content. All nutrient options are consistent with those available in the Individual view, however this view is specifically color-coded to allow for consistent identification of what food item is contributing to each nutrient's daily recommended intake. This visualization can be seen here.
 
