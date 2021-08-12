@@ -35,12 +35,11 @@ Diet + Recommendation view: This view is for individuals interested in eliciting
 All data on Dietary Reference Intakes are from the USDA (https://www.nal.usda.gov/sites/default/files/fnic_uploads/recommended_intakes_individuals.pdf) and are currently only applicable for individuals ages 19-30 years old. 
 
 
-# information for streamlit user
-- include information about what the inputs are and what the outputs are (figure/ workflow diagram), describe them distinctly
-- use some of the screenshot pieces here if possible from our use case
+# For users of our Streamlit
+This freely available dashboard only requires internet access. Any individual who is interested in using the dashboard is able to interact with it on their local machine.
 
-# information for those looking to replicate
-- instructions for what to install, any dependencies, any example code we may be able to include
+# For those looking to replicate our Streamlit
+Streamlit is a python based platform. Individuals looking to replicate and edit the dashboard created for this project will need to download python in order to do so. If interested in using our code, that is made readily available within our GitHub and can also be found in a condensed file on Zenodo. LINK
 
 # Future Directions
 We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate updating of data from USDA FDC 3) include all age bracket options for dietary reference intakes, and 4) pursue user testing and elicit feedback.
