@@ -299,6 +299,6 @@ with st.container():
 
             return possibleFoods.iloc[0]["food"]
         
-        lackingNutrient = min(data2[‘Total’], key=data2[‘Total’].get)
+        lackingNutrient = min(data2['Total'], key=data2['Total'].get)
         foodsToRec = rec_foods(lackingNutrient) # Array of foods to recommend
         
