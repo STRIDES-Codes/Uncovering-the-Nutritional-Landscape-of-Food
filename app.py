@@ -196,7 +196,7 @@ with st.container():
 
     if options != []:
         selected = food.loc[food['food'].isin(options)]
-        st.write(selected)
+        # st.write(selected)
         if vitamins_keys != []:
             if total_checkbox:
                 create_barchartsStacked(
@@ -215,3 +215,86 @@ with st.container():
 
         if mineral_keys == [] and vitamins_keys == []:
             st.write('Please select micronutrient(s)')
+
+
+with st.container():
+    st.subheader('Recommendation')
+
+    data = pd.read_csv(
+        "https://raw.githubusercontent.com/STRIDES-Codes/Uncovering-the-Nutritional-Landscape-of-Food/main/nutrient_foodname_amount.tsv", sep="\t")
+
+    def get_info(food):
+        '''Return a DataFrame containing nutrient data of only the food passed in'''
+        return data[data["food"] == food]
+
+    def get_nutrient(food, nutrient):
+        '''Return the specific nutrient amount for a particular food and nutrient of interest'''
+        thisFood = get_info(food)
+
+        nutInfo = thisFood[thisFood["nutrient"] == nutrient]["nutrient_value"]
+
+        if(len(nutInfo) == 0):
+            return 0
+
+        return float(nutInfo.values)
+
+    options  # contains the array of selected foods ['Apple', ...]
+    # new df containing info about only those foods above
+    if options != []:
+        new_selected = data.loc[data['food'].isin(options)]
+
+        st.write(new_selected)
+
+        daily_rec = {
+            'Vitamin A, RAE': 900,
+            'Vitamin B-12': 2.4,
+            'Vitamin B-6': 1.3,
+            'Vitamin D (D2 + D3)': 15,
+            'Vitamin E (alpha-tocopherol)': 15
+        }
+
+        def create_data(df, keys=['Vitamin A, RAE', 'Vitamin B-12', 'Vitamin B-6', 'Vitamin D (D2 + D3)', 'Vitamin E (alpha-tocopherol)']):
+            keys = sorted(keys, reverse=True)
+
+            # Filter out the df rows that do not contain the correct micronutrient
+            df = df.loc[df['nutrient'].isin(keys)].sort_values(
+                by=['nutrient'], ascending=True)
+            data = {}
+
+            # Create the data format for easier Plotly graphing
+            # {
+            #   'Food name': {
+            #                   'Micronutrient#1': value1 * unit_conversion / daily recommended,
+            #                    ...
+            #                },
+            # }
+            for row in df.itertuples(index=False):
+                data.setdefault(row[2], {})
+
+                data[row[2]].setdefault(
+                    row[0], row[3] / daily_rec[row[0]] * 100
+                )
+            total_dict = {}
+            for k in keys:
+                total_dict.setdefault(k, 0)
+                for food in data:
+                    total_dict[k] += data[food][k]
+            data['Total'] = total_dict
+            return data
+
+        data2 = create_data(
+            new_selected)
+        st.write(data2)
+
+        def rec_foods(nutrient, numRecs=3):
+            '''Recommend a food to satisfy the missing nutritional need of argument nutrient'''
+            possibleFoods = data[data["nutrient"] == nutrient]
+            possibleFoods.sort_values(
+                by=["nutrient_value"], ascending=False, inplace=True)
+            # display(possibleFoods)
+
+            # If there's enough foods with this nutrient
+            if numRecs <= possibleFoods.shape[0]:
+                return possibleFoods.iloc[:numRecs]["food"].values
+
+            return possibleFoods.iloc[0]["food"]
