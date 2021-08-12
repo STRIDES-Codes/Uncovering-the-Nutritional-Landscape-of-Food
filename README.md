@@ -42,7 +42,7 @@ This freely available dashboard only requires internet access. Any individual wh
 Streamlit is a python based platform. Individuals looking to replicate and edit the dashboard created for this project will need to download python in order to do so. If interested in using our code, that is made readily available within our GitHub and can also be found in a condensed file on Zenodo. LINK
 
 # Future Directions
-We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate updating of data from USDA FDC 3) include all age bracket options for dietary reference intakes, and 4) pursue user testing and elicit feedback.
+We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate updating of data from USDA FDC 3) include all age bracket options for dietary reference intakes, 4) allow for the serving size to be customized, and 5) pursue user testing and elicit feedback. 
 
 # Datasets Used for this Project
 - "Uncovering the Nutritional Landscape of Food by Kim" et al. [S1 Dataset. Foods analyzed in this study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118697#references)
