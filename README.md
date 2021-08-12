@@ -30,6 +30,7 @@ Individual view: If a user was interested in viewing the nutrition content for a
 [![Screen-Shot-2021-08-12-at-11-33-11-AM.png](https://i.postimg.cc/FzCmYKgb/Screen-Shot-2021-08-12-at-11-33-11-AM.png)](https://postimg.cc/WqZxKTyt)
 
 Comparison view: For users interested in viewing a nutrient comparison between multiple foods, the Comparison view allows for selection of various foods of interest and reports nutrient content. All nutrient options are consistent with those available in the Individual view, however this view is specifically color-coded to allow for consistent identification of what food item is contributing to each nutrient's daily recommended intake. This visualization can be seen here.
+
 [![Screen-Shot-2021-08-12-at-11-34-25-AM.png](https://i.postimg.cc/1R7Zcfww/Screen-Shot-2021-08-12-at-11-34-25-AM.png)](https://postimg.cc/nMm5nVdh)
 
 Diet with Recommendations view: This view is for individuals interested in gaining insight into how their current diet meets the daily recommended intake for each nutrient with recommendations on how to meet their daily needs. Within the Diet with Recommendations view users can select multiple foods and their nutrients of interest to receive visualization of that data. Additionally, in this view users will receive three recommended foods that are specifically selected to improve the nutrient content of the listed diet to meet dietary reference ranges. Dietary limitation and activity level information is not currently functional within this view.An example of this visualization is displayed below. 
