@@ -16,11 +16,11 @@ All these factors make idenfitfying factual and unbiased information regarding n
 
 *While it is largely difficult for scientific methods to account for all of the individual variations of diet preferences and access, information regarding nutritional content of food can be leveraged to develop data driven interpretations of foods.*
 
-# Our Solution
+<h2>Our Solution<h2>
 
 Our primary aim for this project is to create an interactive visualization dashboard of a selection of foods and their nutritional contents (sourced from the United States Department of Agriculture (USDA) Food Data Central resource). 
 
-# Visualization Dashboard
+<h2>Visualization Dashboard<h2>
 
 You can reach our Streamlit dashboard here:https://share.streamlit.io/tantar/uncovering-the-nutritional-landscape-of-food/main/UNLF.py. Currently we support three different types of visualizations for individual foods, comparison between foods, and the user's personal diet with recommendations.  
 
@@ -38,21 +38,21 @@ Diet with Recommendations view: This view is for individuals interested in gaini
 All data on Dietary Reference Intakes are from the USDA (https://www.nal.usda.gov/sites/default/files/fnic_uploads/recommended_intakes_individuals.pdf) and are currently only applicable for individuals ages 19-30 years old. 
 
 
-# For users of our Streamlit
+<h2>For users of our Streamlit<h2>
 This freely available dashboard only requires internet access. Any individual who is interested in using the dashboard is able to interact with it on their local machine.
 
-# For those looking to replicate our Streamlit
+<h2>For those looking to replicate our Streamlit<h2>
 First, an individual would need to download the datasets described in the "Datasets Used for this Project" section below. Once the foods and nutrient values are integrated into a single dataset, they would then need to calculate what percent of each nutrients recommended daily intakes it met by individual foods. If you are interested in skipping and using our aggregated dataset, it is made available in the data folder of our github. Individuals looking to replicate and edit the dashboard created for this project will need to download python and install the streamlit and plotly libraries. If interested in using our code, that is made readily available within our GitHub and can also be found in a condensed file on Zenodo. LINK
 
-# Future Directions
+<h2>Future Directions<h2>
 We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate updating of data from USDA FDC, 3) include macronutrients within the Diet + Recommendation view, 4) include all age bracket options for dietary reference intakes, 5) include activity level and dietary limitation specific customizations 6) allow for the serving size to be customized, and 7) pursue user testing and elicit feedback. 
 
-# Datasets Used for this Project
+<h2>Datasets Used for this Project<h2>
 - "Uncovering the Nutritional Landscape of Food by Kim" et al. [S1 Dataset. Foods analyzed in this study](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0118697#references)
 
 - [USDA FoodData Central](https://fdc.nal.usda.gov/download-datasets.html) [April 2019 (CSV – 6.1MB)](https://fdc.nal.usda.gov/fdc-datasets/FoodData_Central_sr_legacy_food_csv_%202019-04-02.zip)
 
-# Our Team
+<h2>Our Team<h2>
 Eric Ruan
 
 Eva Jason - Postbaccalaureate IRTA in the NICHD
@@ -67,7 +67,7 @@ Adam Thomas
 
 Dustin Moraczewski
 
-# References
+<h2>References<h2>
 
 Kim S, Sung J, Foo M, Jin Y-S, Kim P-J (2015) Uncovering the Nutritional Landscape of Food. PLoS ONE 10(3): e0118697. https://doi.org/10.1371/journal.pone.0118697
 
