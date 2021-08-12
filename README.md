@@ -35,6 +35,7 @@ Comparison view: For users interested in viewing a nutrient comparison between m
 Diet with Recommendations view: This view is for individuals interested in gaining insight into how their current diet meets the daily recommended intake for each nutrient with recommendations on how to meet their daily needs. Within the Diet with Recommendations view users can select multiple foods and their nutrients of interest to receive visualization of that data. Additionally, in this view users will receive three recommended foods that are specifically selected to improve the nutrient content of the listed diet to meet dietary reference ranges. Dietary limitation and activity level information is not currently functional within this view.An example of this visualization is displayed below. 
 
 [![Screen-Shot-2021-08-12-at-11-50-41-AM.png](https://i.postimg.cc/Rhx6FXdQ/Screen-Shot-2021-08-12-at-11-50-41-AM.png)](https://postimg.cc/62z5bVDy)
+
 [![Screen-Shot-2021-08-12-at-11-50-49-AM.png](https://i.postimg.cc/6qV7Gn1s/Screen-Shot-2021-08-12-at-11-50-49-AM.png)](https://postimg.cc/vxB8JgsX)
 
 All data on Dietary Reference Intakes are from the USDA (https://www.nal.usda.gov/sites/default/files/fnic_uploads/recommended_intakes_individuals.pdf) and are currently only applicable for individuals ages 19-30 years old. 
