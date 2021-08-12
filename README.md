@@ -69,9 +69,9 @@ Lauren Chan - PhD Candidate in Nutrition at Oregon State University
 
 Tarek Antar - Postbaccalaurate IRTA in the NIA
 
-Adam Thomas
+Adam Thomas - NIMH
 
-Dustin Moraczewski
+Dustin Moraczewski - NIMH
 
 # References
 
