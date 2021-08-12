@@ -1,4 +1,4 @@
-# Visualizing-the-Nutritional-Landscape-of-Food: an NIH Codeathon
+# Visualizing the Nutritional Landscape of Food: an NIH Codeathon
 # links to any resulting DOI
 
 
@@ -51,10 +51,6 @@ We're developing a web app that enables individuals to learn about the nutrition
 
 Our web app enables users to compare different food items and their nutritional value, as well as provide data on whether or not selected foods meet daily recommended nutritional guidelines set forth by the USDA.
 
-## Future Steps
-
-- Provide personalized recommendations of foods to add to an individual's diet in order to best satisfy nutritional needs.
-
 # link to our Streamlit site
 
 # information for streamlit user
@@ -65,7 +61,7 @@ Our web app enables users to compare different food items and their nutritional 
 - instructions for what to install, any dependencies, any example code we may be able to include
 
 # planned features/ what's next
-- automation of input files
+We hope to continue refining our dashboard to include greater functionality and customization for users in a future codeathon. Our next steps for this project are to 1) increase the number of foods and nutrients our dashboard can reference, 2) automate file ingestion, 3) include all age bracket options for dietary reference intakes, and 4) pursue user testing and elicit feedback. 
 
 # Our Team
 Eric Ruan
@@ -74,7 +70,7 @@ Eva Jason - Postbaccalaureate IRTA in the NICHD
 
 Kyle Pu
 
-Lauren Chan
+Lauren Chan - PhD Candidate in Nutrition at Oregon State University
 
 Tarek Antar
 
