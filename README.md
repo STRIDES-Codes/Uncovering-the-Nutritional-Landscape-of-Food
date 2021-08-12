@@ -1,6 +1,6 @@
 # Visualizing the Nutritional Landscape of Food: an NIH Codeathon
 
-<h1>Problem</h1>
+<h2>Problem</h2>
 Dietary choices and nutrition behaviors are highly individual and change day to day. Many variables weigh heavily on a person's food choices:
 - Access to food
 - Work/school schedule
