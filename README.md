@@ -60,7 +60,7 @@ Eric Ruan
 
 Eva Jason - Postbaccalaureate IRTA in the NICHD
 
-Kyle Pu
+Kyle Pu - Computer Science Undergrad at UCLA
 
 Lauren Chan - PhD Candidate in Nutrition at Oregon State University
 
